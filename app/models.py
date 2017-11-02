@@ -19,4 +19,5 @@ class Tile(db.Model):
     image_path = db.Column(db.String(128), index=True)
     map_id = db.Column(db.Integer, db.ForeignKey("maps.id"))
 
-    def __repr__(self)
+    def __repr__(self):
+        return "<Tile %r, %r>" % (self.x, self.y)
