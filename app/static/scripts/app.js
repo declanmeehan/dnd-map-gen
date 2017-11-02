@@ -1,7 +1,21 @@
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+var canvasId = document.getElementById("canvas");
 
 
+function smallMap() {
+  for(var i = 0; i < 3; i++) {  //i is for rows j is for columns
+    for(var j = 0; j < 4; j++) {
+      var mapDiv = document.createElement("div");
+      mapDiv.setAttribute("id", "mapdiv" + i);
+      mapDiv.innerHTML = "row: " + i + " column: " + j;
+      canvasId.appendChild(mapDiv);
+    }
+    document.createElement("br");
+  }
+}
+smallMap();
+
+function carousel() {
   
+
+
+}
